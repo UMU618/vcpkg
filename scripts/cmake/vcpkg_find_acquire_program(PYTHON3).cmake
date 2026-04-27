@@ -29,7 +29,7 @@ if(CMAKE_HOST_WIN32)
     # Remove this after the next update
     string(APPEND tool_subdirectory "-1")
 
-    set(paths_to_search "${DOWNLOADS}/tools/python/${tool_subdirectory}")
+    set(paths_to_search "${TOOLS}/python/${tool_subdirectory}")
 
     vcpkg_list(SET post_install_command
         "${CMAKE_COMMAND}" "-DPYTHON_DIR=${paths_to_search}" "-DPYTHON_VERSION=${program_version}" -P "${CMAKE_CURRENT_LIST_DIR}/z_vcpkg_make_python_less_embedded.cmake"

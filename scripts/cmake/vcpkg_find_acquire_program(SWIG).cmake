@@ -7,7 +7,7 @@ if(CMAKE_HOST_WIN32)
         REPO swig/swigwin
         REF "swigwin-${program_version}"
     )
-    set(paths_to_search "${DOWNLOADS}/tools/swig/swigwin-${program_version}")
+    set(paths_to_search "${TOOLS}/swig/swigwin-${program_version}")
 else()
     set(apt_package_name "swig")
     set(brew_package_name "swig")

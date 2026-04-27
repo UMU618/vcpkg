@@ -153,7 +153,7 @@ function(vcpkg_find_acquire_program program)
         message(FATAL_ERROR "Internal error: failed to initialize program_name for program ${program}")
     endif()
 
-    set(full_subdirectory "${DOWNLOADS}/tools/${program_name}/${tool_subdirectory}")
+    set(full_subdirectory "${TOOLS}/${program_name}/${tool_subdirectory}")
     if(NOT "${tool_subdirectory}" STREQUAL "")
         list(APPEND paths_to_search ${full_subdirectory})
     endif()

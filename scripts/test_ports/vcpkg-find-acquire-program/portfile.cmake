@@ -3,8 +3,8 @@ set(VCPKG_POLICY_EMPTY_PACKAGE enabled)
 if(VCPKG_HOST_IS_WINDOWS)
     # The version-agnostic tool dir may already exist.
     # Simulate/test with NASM.
-    file(REMOVE_RECURSE "${DOWNLOADS}/tools/nasm")
-    file(MAKE_DIRECTORY "${DOWNLOADS}/tools/nasm")
+    file(REMOVE_RECURSE "${TOOLS}/nasm")
+    file(MAKE_DIRECTORY "${TOOLS}/nasm")
 endif(VCPKG_HOST_IS_WINDOWS)
 
 # For each vcpkg_find_acquire_program(NAME).cmake script,

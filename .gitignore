@@ -285,6 +285,9 @@ __pycache__/
 /buildtrees/
 /build*/
 /downloads/
+# directory symbolic link is a file
+/downloads
+/tools/
 /installed*/
 /vcpkg_installed*/
 /packages/

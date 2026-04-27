@@ -223,7 +223,7 @@ This can be resolved by explicitly passing URL/SHA pairs to DIRECT_PACKAGES.")
     z_vcpkg_acquire_msys_collect_hashes(hashes PACKAGES ${resolved})
     string(SHA512 total_hash "${hashes}")
     string(SUBSTRING "${total_hash}" 0 16 total_hash)
-    set(path_to_root "${DOWNLOADS}/tools/msys2/${total_hash}")
+    set(path_to_root "${TOOLS}/msys2/${total_hash}")
 
     if(NOT EXISTS "${path_to_root}")
         file(REMOVE_RECURSE "${path_to_root}.tmp")

@@ -8,8 +8,8 @@ if(CMAKE_HOST_WIN32)
         "$ENV{LLVMInstallDir}/bin"
         "$ENV{VCINSTALLDIR}/Tools/Llvm/x64/bin"
         "$ENV{VCINSTALLDIR}/Tools/Llvm/bin"
-        "${DOWNLOADS}/tools/${tool_subdirectory}-windows/bin"
-        "${DOWNLOADS}/tools/clang/${tool_subdirectory}/bin")
+        "${TOOLS}/${tool_subdirectory}-windows/bin"
+        "${TOOLS}/clang/${tool_subdirectory}/bin")
 
     if(DEFINED ENV{PROCESSOR_ARCHITEW6432})
         set(host_arch "$ENV{PROCESSOR_ARCHITEW6432}")

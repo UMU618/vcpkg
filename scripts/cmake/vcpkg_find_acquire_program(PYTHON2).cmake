@@ -15,7 +15,7 @@ if(CMAKE_HOST_WIN32)
             set(download_filename "python-${program_version}.amd64.msi")
             set(download_sha512 6a81a413b80fd39893e7444fd47efa455d240cbb77a456c9d12f7cf64962b38c08cfa244cd9c50a65947c40f936c6c8c5782f7236d7b92445ab3dd01e82af23e)
         endif()
-        set(paths_to_search "${DOWNLOADS}/tools/python/${tool_subdirectory}")
+        set(paths_to_search "${TOOLS}/python/${tool_subdirectory}")
     endif()
 elseif(CMAKE_HOST_SYSTEM_NAME STREQUAL "Darwin")
     # macOS includes Python 2.7 built-in as `python`
